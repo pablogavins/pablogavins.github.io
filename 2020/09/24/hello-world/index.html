@@ -151,21 +151,21 @@ document.addEventListener('DOMContentLoaded', panguFn)</script><div class="js-pj
   function initValine () {
     window.valine = new Valine({
       el: '#vcomment',
-      appId: 'KeMLVDC2JqB2qOGxHFSE3RWl-gzGzoHsz# leancloud application app id',
-      appKey: 'LieUvVy0zEfQ3ubkCSc5pRbP# leancloud application app key',
+      appId: '6W5WjLIXpVKTTiU1FBmiQQqk-9Nh9j0Va',
+      appKey: 'nYpRnh4No3yJ10lQ1OWptu1Y',
       placeholder: '请留下您的足迹',
-      avatar: 'monsterid',
+      avatar: 'mm',
       meta: 'nick,mail,link'.split(','),
       pageSize: '10',
       lang: 'zh-CN',
       recordIP: false,
-      serverURLs: '',
+      serverURLs: 'http[s]://[tab/us].avoscloud.com',
       emojiCDN: '',
       emojiMaps: "",
-      enableQQ: true,
+      enableQQ: false,
       path: window.location.pathname,
     });
-    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+    if ('false') { valine.config.requiredFields= 'false'.split(',') }
   }
 
   if (typeof Valine === 'function') initValine() 
